@@ -17,14 +17,14 @@ export default function BookACallPage() {
           Schedule a time to discuss your video content needs and explore how we can
           help scale your brand through authentic video communication.
         </p>
-        {/* Calendly embed placeholder */}
+        {/* Cal.com embed placeholder */}
         <div className="mt-10 card max-w-xl mx-auto min-h-[400px] flex items-center justify-center">
           <div className="text-center">
             <p className="text-[var(--color-muted)] mb-4">
-              Calendly booking widget will load here.
+              Cal.com booking widget will load here.
             </p>
             <a
-              href="https://calendly.com/tvec/the-spokesman-2025"
+              href="https://cal.com/videorep/the-spokesman-partnership-call"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

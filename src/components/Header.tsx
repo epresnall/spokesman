@@ -21,7 +21,7 @@ export default function Header() {
       <div className="bg-[var(--color-green)] text-white text-center text-sm py-2 px-4">
         Currently seeking 2 more partnerships for 2025 —{" "}
         <a
-          href="https://calendly.com/tvec/the-spokesman-2025"
+          href="https://cal.com/videorep/the-spokesman-partnership-call"
           target="_blank"
           rel="noopener noreferrer"
           className="underline font-bold"
