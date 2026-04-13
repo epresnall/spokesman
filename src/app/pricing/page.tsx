@@ -72,8 +72,41 @@ export default function PricingPage() {
         </div>
       </section>
 
+      {/* Monthly Add-Ons */}
+      <section className="bg-[var(--color-bg-alt)] py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-2xl font-bold text-center mb-8">Monthly Add-Ons</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="card">
+              <h3 className="font-bold text-lg text-[var(--color-green)] mb-1">Script Writing Support</h3>
+              <p className="text-sm text-[var(--color-muted)] mb-4">For marketing teams that need support in video script-writing, including strategy, copy, and visual descriptions.</p>
+              <ul className="space-y-2 mb-6">
+                {["Dedicated Script-Writer", "Visual Description", "Product / Service Research", "Competitor Research", "3-4 Day Turnarounds"].map((f) => (
+                  <li key={f} className="flex items-start gap-2 text-sm text-[var(--color-muted)]">
+                    <span className="text-[var(--color-green)]">&#10003;</span>{f}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-[var(--color-muted)] italic">** Only available for scripts and videos up to 5 minutes (500 words)</p>
+            </div>
+            <div className="card">
+              <h3 className="font-bold text-lg text-[var(--color-green)] mb-1">Editing Support</h3>
+              <p className="text-sm text-[var(--color-muted)] mb-4">For marketing teams that need support in video editing, including strategy, motion graphics, and animations.</p>
+              <ul className="space-y-2 mb-6">
+                {["Dedicated Editor", "Templated Animation", "Templated Motion Graphics", "All Social Media Size Exports", "4-5 Day Turnarounds"].map((f) => (
+                  <li key={f} className="flex items-start gap-2 text-sm text-[var(--color-muted)]">
+                    <span className="text-[var(--color-green)]">&#10003;</span>{f}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-[var(--color-muted)] italic">** Only available for scripts and video up to 5 minutes (500 words)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="bg-[var(--color-bg-alt)] py-16">
+      <section className="py-16">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="text-2xl font-bold">Ready to get started?</h2>
           <p className="text-[var(--color-muted)] mt-4">Book a call to discuss your project and get a custom quote.</p>

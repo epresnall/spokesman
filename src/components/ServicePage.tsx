@@ -86,6 +86,57 @@ export default function ServicePage({
           </Link>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <section className="py-20 lg:py-28 bg-[var(--color-bg-alt)]">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-3xl font-black text-center mb-12">
+            Great Brands We Partner With
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              { name: "Brecker Brees", text: "Out of all the other brand representatives and video creatives that we were considering, the quality of the portfolio of The Spokesman was extremely impressive... it was exactly what we were looking for. Very professional, very easy to work with, and very quick on the turn around time." },
+              { name: "Harshita Pulla", text: "We asked Eric to record a product tutorial for one of our VIP clients. He asked all the questions to understand the script and completed everything on the first try. The team loved the video! We keep using it for internal onboarding presentations." },
+              { name: "Konstantyn Shyshkin", text: "Eric is top-notch talent! He's amazing and high-energy on screen, but extremely professional as well, and is a pleasure to work with. He also adheres to deadlines!" },
+              { name: "Kelly Cambry", text: "Eric was a charm to work with. His on camera talent was spot on and he executed our project with flair. He is extremely detailed and thorough." },
+            ].map((t) => (
+              <div key={t.name} className="card">
+                <p className="text-sm text-[var(--color-muted)] leading-relaxed italic">&ldquo;{t.text}&rdquo;</p>
+                <p className="mt-4 font-bold text-[var(--color-green)]">{t.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who is The Spokesman */}
+      <section className="py-20 lg:py-28">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <h2 className="text-3xl font-black mb-6">Who is The Spokesman?</h2>
+          <p className="text-[var(--color-muted)] leading-relaxed max-w-2xl mx-auto">
+            With more than 25+ years of experience working both in front and behind the camera,
+            The Spokesman&apos;s CEO/Founder has worked alongside more than 500+ global brand
+            partners and marketers. From Broadway national tours to Fortune 500 boardrooms,
+            Eric brings a performer&apos;s presence and an entrepreneur&apos;s strategic thinking
+            to every video partnership.
+          </p>
+          <div className="flex justify-center gap-8 mt-8">
+            <div className="text-center">
+              <p className="text-3xl font-black text-[var(--color-green)]">200+</p>
+              <p className="text-sm text-[var(--color-muted)]">Brands Served</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl font-black text-[var(--color-green)]">50+</p>
+              <p className="text-sm text-[var(--color-muted)]">Countries Reached</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl font-black text-[var(--color-green)]">1000+</p>
+              <p className="text-sm text-[var(--color-muted)]">Videos Created</p>
+            </div>
+          </div>
+          <Link href="/book-a-call" className="btn-primary mt-10">Book a Call</Link>
+        </div>
+      </section>
     </>
   );
 }
