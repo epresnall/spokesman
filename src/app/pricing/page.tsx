@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -101,6 +102,33 @@ export default function PricingPage() {
               </ul>
               <p className="text-xs text-[var(--color-muted)] italic">** Only available for scripts and video up to 5 minutes (500 words)</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Logos */}
+      <section className="py-12">
+        <div className="mx-auto max-w-6xl px-6 text-center">
+          <h2 className="text-lg font-semibold text-[var(--color-muted)] mb-6">Trusted by Over 200+ Partners Worldwide</h2>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+            {[
+              { src: "/images/ahrefs.png", alt: "Ahrefs" },
+              { src: "/images/unilever.png", alt: "Unilever" },
+              { src: "/images/chipper.png", alt: "Chipper" },
+              { src: "/images/svacademy.png", alt: "SV Academy" },
+              { src: "/images/syzzle.png", alt: "Syzzle" },
+              { src: "/images/phs_logo.svg", alt: "PHS" },
+              { src: "/images/Asset-1-2.svg", alt: "Partner" },
+            ].map((logo) => (
+              <Image
+                key={logo.alt}
+                src={logo.src}
+                alt={logo.alt}
+                width={96}
+                height={48}
+                className="h-10 w-auto object-contain"
+              />
+            ))}
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Video Samples",
@@ -52,6 +53,33 @@ export default function VideoSamplesPage() {
           <p className="text-center text-[var(--color-muted)]">
             Video gallery coming soon. <Link href="/book-a-call" className="text-[var(--color-green)] font-semibold hover:underline">Book a call</Link> to see our full portfolio.
           </p>
+        </div>
+      </section>
+
+      {/* Portfolio showcase images */}
+      <section className="bg-[var(--color-bg-alt)] py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-2xl font-bold text-center mb-8">Our Work</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="relative rounded-2xl overflow-hidden aspect-video">
+              <Image src="/images/services-img1.png" alt="Video production sample - explainer video" width={1000} height={563} className="w-full h-full object-cover" />
+            </div>
+            <div className="relative rounded-2xl overflow-hidden aspect-video">
+              <Image src="/images/services-img2.png" alt="Video production sample - brand video" width={1000} height={563} className="w-full h-full object-cover" />
+            </div>
+            <div className="relative rounded-2xl overflow-hidden aspect-video">
+              <Image src="/images/services-img3.png" alt="Video production sample - social ad" width={889} height={500} className="w-full h-full object-cover" />
+            </div>
+            <div className="relative rounded-2xl overflow-hidden aspect-video">
+              <Image src="/images/ben-collins-aVhHDI843K8-unsplash.png" alt="Professional video studio setup" width={1000} height={563} className="w-full h-full object-cover" />
+            </div>
+            <div className="relative rounded-2xl overflow-hidden aspect-video">
+              <Image src="/images/Group-261.png" alt="Video production showcase" width={800} height={450} className="w-full h-full object-cover" />
+            </div>
+            <div className="relative rounded-2xl overflow-hidden aspect-video">
+              <Image src="/images/Group-271.png" alt="Video production showcase" width={800} height={450} className="w-full h-full object-cover" />
+            </div>
+          </div>
         </div>
       </section>
     </>

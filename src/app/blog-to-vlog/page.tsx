@@ -24,6 +24,7 @@ export default function BlogToVlogPage() {
         { title: "Premium Editing Done For You", description: "With your 'go ahead', we'll trim your client's video to perfection and jazz it up with commercial-free music, typography and motion graphics!" },
       ]}
       ctaText="Enhance Your Blogs By Adding Video In 3 Simple Steps"
+      youtubeIds={["z0ZPz7xTL-A", "28QCg9WHNzo", "eV5rdon1ldc", "qL2aVPcEOD0"]}
     />
   );
 }

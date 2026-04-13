@@ -25,6 +25,7 @@ export default function SocialMediaAdsPage() {
         { title: "Nurture More Brand Promoters!", description: "Once we finalize your video together, you're all set to share your ad on social media and watch engagement soar. It's as easy as that!" },
       ]}
       ctaText="Reach and Inspire More Customers With Branded Social Media Ads"
+      youtubeIds={["tS0oMonCMUw", "DaNyn9-CG8I", "PhbzP-Yfoww"]}
     />
   );
 }

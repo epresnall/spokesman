@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "The Spokesman | Creative Video Director",
@@ -333,14 +334,15 @@ export default function Home() {
               </p>
             </div>
             <div className="relative flex justify-center">
-              {/* Placeholder for hero image/video */}
-              <div className="w-full aspect-[4/3] bg-[var(--color-bg-alt)] rounded-2xl flex items-center justify-center">
-                <Link
-                  href={BOOKING_URL}
-                  className="w-16 h-16 rounded-full bg-[var(--color-green)] flex items-center justify-center text-white text-2xl shadow-lg hover:scale-110 transition-transform"
-                >
-                  &#9654;
-                </Link>
+              <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/pexels-thisisengineering-3862132.jpg"
+                  alt="Professional video production"
+                  width={1280}
+                  height={960}
+                  className="w-full h-full object-cover rounded-2xl"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -354,11 +356,22 @@ export default function Home() {
             Trusted By 200+ Global Organizations Over The Last 25 Years
           </h2>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {/* Logo placeholders */}
-            {Array.from({ length: 7 }).map((_, i) => (
-              <div
-                key={i}
-                className="w-24 h-12 bg-[var(--color-bg-alt)] rounded"
+            {[
+              { src: "/images/ahrefs.png", alt: "Ahrefs" },
+              { src: "/images/unilever.png", alt: "Unilever" },
+              { src: "/images/chipper.png", alt: "Chipper" },
+              { src: "/images/svacademy.png", alt: "SV Academy" },
+              { src: "/images/syzzle.png", alt: "Syzzle" },
+              { src: "/images/phs_logo.svg", alt: "PHS" },
+              { src: "/images/Asset-1-2.svg", alt: "Partner" },
+            ].map((logo) => (
+              <Image
+                key={logo.alt}
+                src={logo.src}
+                alt={logo.alt}
+                width={96}
+                height={48}
+                className="h-10 w-auto object-contain"
               />
             ))}
           </div>
@@ -464,11 +477,17 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative flex justify-center">
-              {/* Placeholder for Simplify video/image */}
-              <div className="w-full aspect-square bg-[var(--color-bg-alt)] rounded-2xl flex items-center justify-center max-w-md">
-                <div className="w-16 h-16 rounded-full bg-[var(--color-green)] flex items-center justify-center text-white text-2xl shadow-lg">
-                  &#9654;
-                </div>
+              <div className="w-full aspect-video rounded-2xl overflow-hidden max-w-md">
+                <iframe
+                  src="https://player.vimeo.com/video/1028225375"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title="Simplify LLC Success Story"
+                  className="w-full h-full"
+                />
               </div>
             </div>
             <div>
@@ -533,6 +552,18 @@ export default function Home() {
             annually - ensuring each receives the dedicated attention and
             authentic communication their audience deserves.&rdquo;
           </blockquote>
+          <div className="mt-10 max-w-2xl mx-auto aspect-video rounded-2xl overflow-hidden">
+            <iframe
+              src="https://player.vimeo.com/video/1028591291"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="The Spokesman Introduction"
+              className="w-full h-full"
+            />
+          </div>
         </div>
       </section>
 
@@ -688,7 +719,15 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-              <div className="aspect-[4/3] bg-[var(--color-dark-text)] rounded-xl" />
+              <div className="aspect-[4/3] rounded-xl overflow-hidden">
+                <Image
+                  src="/images/duncan-1.jpg"
+                  alt="Global on-location filming"
+                  width={800}
+                  height={600}
+                  className="w-full h-full object-cover rounded-xl"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -719,7 +758,15 @@ export default function Home() {
                 <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
-            <div className="aspect-[4/3] bg-[var(--color-border)] rounded-2xl" />
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden">
+              <Image
+                src="/images/pexels-pixabay-461064.jpg"
+                alt="Eric Presnall - The Spokesman"
+                width={1280}
+                height={960}
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
           </div>
         </div>
       </section>

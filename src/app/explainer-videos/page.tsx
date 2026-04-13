@@ -25,6 +25,7 @@ export default function ExplainerVideosPage() {
         { title: "Hit 'Share'", description: "Once we finalize your video, you're all set to share it to your homepage and watch the leads roll in. It's as easy as that!" },
       ]}
       ctaText="Drive Action in 2 Minutes Or Less With Powerful Explainer Videos"
+      youtubeIds={["Vt1FXhOlKzY", "MfJNzYEUs8o", "4lS63RNQxfo"]}
     />
   );
 }

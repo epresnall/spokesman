@@ -33,7 +33,7 @@ export default function Header() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/images/The-Spokesman-Logo_FINAL-2-green.png"
+            src="/images/the-spokesman2.svg"
             alt="The Spokesman"
             width={160}
             height={40}

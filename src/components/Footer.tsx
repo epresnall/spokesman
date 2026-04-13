@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
             <Image
-              src="/images/The-Spokesman-Logo_FINAL-2-green.png"
+              src="/images/the-spokesman2.svg"
               alt="The Spokesman"
               width={140}
               height={35}

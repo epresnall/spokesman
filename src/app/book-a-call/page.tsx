@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Book a Call",
@@ -17,6 +18,15 @@ export default function BookACallPage() {
           Schedule a time to discuss your video content needs and explore how we can
           help scale your brand through authentic video communication.
         </p>
+        <div className="mt-6 flex justify-center">
+          <Image
+            src="/images/the-spokesman2.svg"
+            alt="The Spokesman"
+            width={200}
+            height={50}
+            className="h-12 w-auto"
+          />
+        </div>
         {/* Cal.com embed placeholder */}
         <div className="mt-10 card max-w-xl mx-auto min-h-[400px] flex items-center justify-center">
           <div className="text-center">
